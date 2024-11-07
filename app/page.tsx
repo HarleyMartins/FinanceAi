@@ -1,7 +1,11 @@
-import { Button } from "./_components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
 const Home = () => {
-  return <Button>Hello World</Button>;
+  return (
+    <div className="flex h-full items-center justify-center">
+      <UserButton showName />
+    </div>
+  );
 };
 
 export default Home;
